@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+	<bean id="dev" class="com.spring.sampleproject.Dev" autowire="byType">
+		<constructor-arg value="34"/>
+	</bean>
+	<bean id="comp" class="com.spring.sampleproject.Laptop">
+		<constructor-arg value="55"/>
+	</bean>
+	<bean id="desktop" class="com.spring.sampleproject.Desktop" primary ="true">
+	</bean>
+</beans>
